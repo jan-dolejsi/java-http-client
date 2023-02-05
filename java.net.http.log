@@ -1,0 +1,514 @@
+DEBUG: [main] [398ms] HttpClientImpl(1) proxySelector is sun.net.spi.DefaultProxySelector@368f2016 (user-supplied=false)
+DEBUG: [main] [864ms] HttpClientImpl(2) proxySelector is sun.net.spi.DefaultProxySelector@368f2016 (user-supplied=false)
+DEBUG: [main] [874ms] HttpClientImpl(2) ClientImpl (async) send https://obscured.mock.pstmn.io/obscured POST
+DEBUG: [main] [889ms] Exchange establishing exchange for https://obscured.mock.pstmn.io/obscured POST,
+	 proxy=null
+DEBUG: [main] [981ms] PlainHttpConnection(?) Initial receive buffer size is: 65536
+DEBUG: [main] [981ms] PlainHttpConnection(?) Initial send buffer size is: 65536
+DEBUG: [main] [997ms] PlainHttpConnection(SocketTube(1)) registering connect event
+DEBUG: [HttpClient-2-SelectorManager] [1s] SelectorAttachment Registering jdk.internal.net.http.PlainHttpConnection$ConnectEvent@1194e427 for 8 (true)
+DEBUG: [main] [1s 2ms] ExchangeImpl get: Trying to get HTTP/2 connection
+DEBUG: [HttpClient-2-SelectorManager] [1s 109ms] PlainHttpConnection(SocketTube(1)) ConnectEvent: finishing connect
+DEBUG: [HttpClient-2-SelectorManager] [1s 110ms] PlainHttpConnection(SocketTube(1)) ConnectEvent: connect finished: true, cancelled: false, Local addr: /100.67.93.90:51242
+DEBUG: [HttpClient-2-Worker-0] [1s 129ms] SocketTube(1) connecting flows
+DEBUG: [HttpClient-2-Worker-0] [1s 130ms] SocketTube(1) read publisher got subscriber
+DEBUG: [HttpClient-2-Worker-0] [1s 130ms] SocketTube(1) registering subscribe event
+DEBUG: [HttpClient-2-Worker-0] [1s 130ms] SocketTube(1) leaving read.subscribe:  Reading: [ops=0, demand=0, stopped=false], Writing: [ops=0, demand=0]
+DEBUG: [HttpClient-2-SelectorManager] [1s 130ms] SocketTube(1) subscribe event raised
+DEBUG: [HttpClient-2-Worker-0] [1s 138ms] SSL Writer(SocketTube(1)) requesting 1
+DEBUG: [HttpClient-2-Worker-0] [1s 139ms] SSLTube(SocketTube(1)) request: n=1
+DEBUG: [HttpClient-2-Worker-0] [1s 139ms] SSL Writer(SocketTube(1)) calling downstreamSubscriber::onSubscribe on SocketTube(1)
+DEBUG: [HttpClient-2-Worker-0] [1s 139ms] SocketTube(1) subscribed for writing
+DEBUG: [HttpClient-2-Worker-0] [1s 139ms] SocketTube(1) write: registering startSubscription event
+DEBUG: [HttpClient-2-Worker-0] [1s 140ms] SSL Writer(SocketTube(1)) onSubscribe initiating handshaking
+DEBUG: [HttpClient-2-Worker-0] [1s 145ms] SSL Writer(SocketTube(1)) added 1 (0 bytes) to the writeList
+DEBUG: [HttpClient-2-Worker-0] [1s 149ms] SSL Writer(SocketTube(1)) processData, writeList remaining:0, hsTriggered:true, needWrap:false
+DEBUG: [HttpClient-2-Worker-0] [1s 149ms] SSL Writer(SocketTube(1)) wrapping 0 bytes
+DEBUG: [HttpClient-2-Worker-0] [1s 208ms] SSL Writer(SocketTube(1)) SSLResult: Status = OK HandshakeStatus = NEED_UNWRAP
+bytesConsumed = 0 bytesProduced = 529 sequenceNumber = 0
+DEBUG: [HttpClient-2-Worker-0] [1s 211ms] SSL Writer(SocketTube(1)) OK => produced: 529 bytes into 536, not wrapped: 0
+DEBUG: [HttpClient-2-Worker-0] [1s 216ms] SSL Writer(SocketTube(1)) wrapBuffer returned Status = OK HandshakeStatus = NEED_UNWRAP
+bytesConsumed = 0 bytesProduced = 529 sequenceNumber = 0
+DEBUG: [HttpClient-2-Worker-0] [1s 216ms] SSL Writer(SocketTube(1)) handshaking
+DEBUG: [HttpClient-2-Worker-0] [1s 228ms] SSL Reader(SocketTube(1)) processData: readBuf remaining:0, state: HANDSHAKING , engine handshake status:NEED_UNWRAP
+DEBUG: [HttpClient-2-Worker-0] [1s 229ms] SSL Writer(SocketTube(1)) Sending 529 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 229ms] SSL Writer(SocketTube(1)) Adding 529 to outputQ queue
+DEBUG: [HttpClient-2-Worker-0] [1s 230ms] SSL Writer(SocketTube(1)) pushScheduler is alive
+DEBUG: [HttpClient-2-Worker-0] [1s 231ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue not empty, downstreamSubscription: SubscriptionBase: window = 0 cancelled = false
+DEBUG: [HttpClient-2-SelectorManager] [1s 231ms] SocketTube(1) handling pending subscription for READER: SubscriberWrapper: upstreamCompleted: false upstreamWindow: 0 downstreamCompleted: false completionAcknowledged: false outputQ size: 0 cf: jdk.internal.net.http.common.MinimalFuture@7c7f943c[Not completed, 4 dependents] (id=27) downstreamSubscription: SubscriptionBase: window = 0 cancelled = false downstreamSubscriber: SSLSubscriberWrapper[SSLTube(SocketTube(1)), delegate: null, getALPN: null, onCompleteReceived: false, onError: null], readBuf: java.nio.HeapByteBuffer[pos=0 lim=0 cap=1024], count: 0, scheduler: running, status: null, handshakeState: 0, engine: NEED_UNWRAP
+DEBUG: [HttpClient-2-SelectorManager] [1s 231ms] SocketTube(1) read demand reset to 0
+DEBUG: [HttpClient-2-SelectorManager] [1s 231ms] SocketTube(1) calling onSubscribe
+DEBUG: [HttpClient-2-SelectorManager] [1s 232ms] SSL Reader(SocketTube(1)) requesting 1
+DEBUG: [HttpClient-2-SelectorManager] [1s 232ms] SocketTube(1) got some demand for reading
+DEBUG: [HttpClient-2-SelectorManager] [1s 232ms] SocketTube(1) resuming read event
+DEBUG: [HttpClient-2-SelectorManager] [1s 233ms] SocketTube(1) leaving request(1):  Reading: [ops=1, demand=1, stopped=false], Writing: [ops=0, demand=0]
+DEBUG: [HttpClient-2-SelectorManager] [1s 233ms] SSL Reader(SocketTube(1)) calling downstreamSubscriber::onSubscribe on SSLSubscriberWrapper[SSLTube(SocketTube(1)), delegate: null, getALPN: jdk.internal.net.http.common.MinimalFuture@43be2bbd[Not completed, 1 dependents] (id=33), onCompleteReceived: false, onError: null]
+DEBUG: [HttpClient-2-SelectorManager] [1s 233ms] SSLTube(SocketTube(1)) SSLSubscriberWrapper (reader) onSubscribe(SubscriptionBase: window = 0 cancelled = false)
+DEBUG: [HttpClient-2-SelectorManager] [1s 234ms] SSLTube(SocketTube(1)) SSLSubscriberWrapper (reader) onSubscribeImpl: no delegate yet
+DEBUG: [HttpClient-2-SelectorManager] [1s 234ms] SocketTube(1) onSubscribe called
+DEBUG: [HttpClient-2-SelectorManager] [1s 234ms] SocketTube(1) pending subscriber subscribed
+DEBUG: [HttpClient-2-SelectorManager] [1s 234ms] SelectorAttachment Registering jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent@61c74623 for 1 (true)
+DEBUG: [HttpClient-2-SelectorManager] [1s 234ms] SocketTube(1) write: starting subscription
+DEBUG: [HttpClient-2-SelectorManager] [1s 234ms] SocketTube(1) write: offloading requestMore
+DEBUG: [HttpClient-2-Worker-0] [1s 235ms] SocketTube(1) write: requesting more...
+DEBUG: [HttpClient-2-Worker-0] [1s 235ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue not empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 236ms] SSL Writer(SocketTube(1)) DownstreamPusher: Pushing 529 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 236ms] SocketTube(1) trying to write: 529
+DEBUG: [HttpClient-2-Worker-0] [1s 238ms] SocketTube(1) wrote: 529
+DEBUG: [HttpClient-2-Worker-0] [1s 239ms] SocketTube(1) write: requesting more...
+DEBUG: [HttpClient-2-Worker-0] [1s 239ms] SocketTube(1) leaving requestMore:  Reading: [ops=1, demand=1, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 239ms] SocketTube(1) leaving w.onNext Reading: [ops=1, demand=1, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 239ms] SSL Writer(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:1
+DEBUG: [HttpClient-2-Worker-0] [1s 239ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 239ms] SocketTube(1) leaving requestMore:  Reading: [ops=1, demand=1, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-SelectorManager] [1s 354ms] SelectorAttachment Registering jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent@61c74623 for 0 (false)
+DEBUG: [HttpClient-2-SelectorManager] [1s 355ms] HttpClientImpl(2) ByteBuffer.allocateDirect(16384)
+DEBUG: [HttpClient-2-SelectorManager] [1s 355ms] SocketTube(1) read bytes: 5375
+DEBUG: [HttpClient-2-SelectorManager] [1s 355ms] SSL Reader(SocketTube(1)) onNext
+DEBUG: [HttpClient-2-SelectorManager] [1s 355ms] SSL Reader(SocketTube(1)) Adding 5375 bytes to read buffer
+DEBUG: [HttpClient-2-SelectorManager] [1s 355ms] SocketTube(1) resuming read event
+DEBUG: [HttpClient-2-SelectorManager] [1s 356ms] SelectorAttachment Registering jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent@61c74623 for 1 (false)
+DEBUG: [HttpClient-2-Worker-0] [1s 356ms] SSL Reader(SocketTube(1)) processData: readBuf remaining:5375, state: HANDSHAKING , engine handshake status:NEED_UNWRAP
+DEBUG: [HttpClient-2-SelectorManager] [1s 356ms] SocketTube(1) leaving read() loop after onNext:  Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 356ms] SSL Reader(SocketTube(1)) Unwrapping: 5375
+DEBUG: [HttpClient-2-Worker-0] [1s 361ms] SSL Reader(SocketTube(1)) Decoded 0 bytes out of 5375 into buffer of 512 remaining to decode: 5300
+DEBUG: [HttpClient-2-Worker-0] [1s 362ms] SSL Reader(SocketTube(1)) Unwrapped: result: Status = OK HandshakeStatus = NEED_TASK
+bytesConsumed = 75 bytesProduced = 0
+DEBUG: [HttpClient-2-Worker-0] [1s 362ms] SSL Reader(SocketTube(1)) Unwrapped: consumed: 75
+DEBUG: [HttpClient-2-Worker-0] [1s 362ms] SSL Reader(SocketTube(1)) handshaking
+DEBUG: [HttpClient-2-Worker-0] [1s 362ms] SSLFlowDelegate(SocketTube(1)) obtaining and initiating task execution
+DEBUG: [HttpClient-2-Worker-0] [1s 363ms] SSLFlowDelegate(SocketTube(1)) #tasks to execute: 1
+DEBUG: [HttpClient-2-Worker-0] [1s 368ms] SSLFlowDelegate(SocketTube(1)) finished task execution
+DEBUG: [HttpClient-2-Worker-0] [1s 368ms] SSL Writer(SocketTube(1)) processData, writeList remaining:0, hsTriggered:false, needWrap:false
+DEBUG: [HttpClient-2-Worker-0] [1s 368ms] SSL Reader(SocketTube(1)) processData: readBuf remaining:5300, state: HANDSHAKING , engine handshake status:NEED_UNWRAP
+DEBUG: [HttpClient-2-Worker-0] [1s 368ms] SSL Reader(SocketTube(1)) Unwrapping: 5300
+DEBUG: [HttpClient-2-Worker-0] [1s 368ms] SSL Reader(SocketTube(1)) Decoded 0 bytes out of 5300 into buffer of 512 remaining to decode: 347
+DEBUG: [HttpClient-2-Worker-0] [1s 368ms] SSL Reader(SocketTube(1)) Unwrapped: result: Status = OK HandshakeStatus = NEED_TASK
+bytesConsumed = 4953 bytesProduced = 0
+DEBUG: [HttpClient-2-Worker-0] [1s 368ms] SSL Reader(SocketTube(1)) Unwrapped: consumed: 4953
+DEBUG: [HttpClient-2-Worker-0] [1s 368ms] SSL Reader(SocketTube(1)) handshaking
+DEBUG: [HttpClient-2-Worker-0] [1s 369ms] SSLFlowDelegate(SocketTube(1)) obtaining and initiating task execution
+DEBUG: [HttpClient-2-Worker-0] [1s 369ms] SSLFlowDelegate(SocketTube(1)) #tasks to execute: 1
+DEBUG: [HttpClient-2-Worker-0] [1s 485ms] SSLFlowDelegate(SocketTube(1)) finished task execution
+DEBUG: [HttpClient-2-Worker-0] [1s 485ms] SSL Writer(SocketTube(1)) processData, writeList remaining:0, hsTriggered:false, needWrap:false
+DEBUG: [HttpClient-2-Worker-0] [1s 485ms] SSL Reader(SocketTube(1)) processData: readBuf remaining:347, state: HANDSHAKING , engine handshake status:NEED_UNWRAP
+DEBUG: [HttpClient-2-Worker-0] [1s 485ms] SSL Reader(SocketTube(1)) Unwrapping: 347
+DEBUG: [HttpClient-2-Worker-0] [1s 485ms] SSL Reader(SocketTube(1)) Decoded 0 bytes out of 347 into buffer of 512 remaining to decode: 9
+DEBUG: [HttpClient-2-Worker-0] [1s 486ms] SSL Reader(SocketTube(1)) Unwrapped: result: Status = OK HandshakeStatus = NEED_TASK
+bytesConsumed = 338 bytesProduced = 0
+DEBUG: [HttpClient-2-Worker-0] [1s 486ms] SSL Reader(SocketTube(1)) Unwrapped: consumed: 338
+DEBUG: [HttpClient-2-Worker-0] [1s 486ms] SSL Reader(SocketTube(1)) handshaking
+DEBUG: [HttpClient-2-Worker-0] [1s 486ms] SSLFlowDelegate(SocketTube(1)) obtaining and initiating task execution
+DEBUG: [HttpClient-2-Worker-0] [1s 486ms] SSLFlowDelegate(SocketTube(1)) #tasks to execute: 1
+DEBUG: [HttpClient-2-Worker-0] [1s 493ms] SSLFlowDelegate(SocketTube(1)) finished task execution
+DEBUG: [HttpClient-2-Worker-0] [1s 493ms] SSL Writer(SocketTube(1)) processData, writeList remaining:0, hsTriggered:false, needWrap:false
+DEBUG: [HttpClient-2-Worker-0] [1s 494ms] SSL Reader(SocketTube(1)) processData: readBuf remaining:9, state: HANDSHAKING , engine handshake status:NEED_UNWRAP
+DEBUG: [HttpClient-2-Worker-0] [1s 494ms] SSL Reader(SocketTube(1)) Unwrapping: 9
+DEBUG: [HttpClient-2-Worker-0] [1s 494ms] SSL Reader(SocketTube(1)) Decoded 0 bytes out of 9 into buffer of 512 remaining to decode: 0
+DEBUG: [HttpClient-2-Worker-0] [1s 494ms] SSL Reader(SocketTube(1)) Unwrapped: result: Status = OK HandshakeStatus = NEED_TASK
+bytesConsumed = 9 bytesProduced = 0
+DEBUG: [HttpClient-2-Worker-0] [1s 494ms] SSL Reader(SocketTube(1)) Unwrapped: consumed: 9
+DEBUG: [HttpClient-2-Worker-0] [1s 494ms] SSL Reader(SocketTube(1)) handshaking
+DEBUG: [HttpClient-2-Worker-0] [1s 494ms] SSLFlowDelegate(SocketTube(1)) obtaining and initiating task execution
+DEBUG: [HttpClient-2-Worker-0] [1s 494ms] SSLFlowDelegate(SocketTube(1)) #tasks to execute: 1
+DEBUG: [HttpClient-2-Worker-0] [1s 530ms] SSLFlowDelegate(SocketTube(1)) finished task execution
+DEBUG: [HttpClient-2-Worker-0] [1s 530ms] SSL Writer(SocketTube(1)) processData, writeList remaining:0, hsTriggered:false, needWrap:true
+DEBUG: [HttpClient-2-Worker-0] [1s 530ms] SSL Writer(SocketTube(1)) wrapping 0 bytes
+DEBUG: [HttpClient-2-Worker-0] [1s 530ms] SSL Writer(SocketTube(1)) SSLResult: Status = OK HandshakeStatus = NEED_WRAP
+bytesConsumed = 0 bytesProduced = 75 sequenceNumber = 1
+DEBUG: [HttpClient-2-Worker-0] [1s 530ms] SSL Writer(SocketTube(1)) OK => produced: 75 bytes into 80, not wrapped: 0
+DEBUG: [HttpClient-2-Worker-0] [1s 530ms] SSL Writer(SocketTube(1)) wrapBuffer returned Status = OK HandshakeStatus = NEED_WRAP
+bytesConsumed = 0 bytesProduced = 75 sequenceNumber = 1
+DEBUG: [HttpClient-2-Worker-0] [1s 530ms] SSL Writer(SocketTube(1)) handshaking
+DEBUG: [HttpClient-2-Worker-0] [1s 530ms] SSL Writer(SocketTube(1)) Sending 75 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 530ms] SSL Writer(SocketTube(1)) Adding 75 to outputQ queue
+DEBUG: [HttpClient-2-Worker-0] [1s 531ms] SSL Writer(SocketTube(1)) pushScheduler is alive
+DEBUG: [HttpClient-2-Worker-0] [1s 531ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue not empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 531ms] SSL Writer(SocketTube(1)) DownstreamPusher: Pushing 75 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 531ms] SocketTube(1) trying to write: 75
+DEBUG: [HttpClient-2-Worker-0] [1s 531ms] SocketTube(1) wrote: 75
+DEBUG: [HttpClient-2-Worker-0] [1s 531ms] SocketTube(1) write: requesting more...
+DEBUG: [HttpClient-2-Worker-0] [1s 531ms] SocketTube(1) leaving requestMore:  Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 531ms] SocketTube(1) leaving w.onNext Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 531ms] SSL Writer(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:1
+DEBUG: [HttpClient-2-Worker-0] [1s 532ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 532ms] SSL Writer(SocketTube(1)) wrapping 0 bytes
+DEBUG: [HttpClient-2-Worker-0] [1s 532ms] SSL Writer(SocketTube(1)) SSLResult: Status = OK HandshakeStatus = NEED_WRAP
+bytesConsumed = 0 bytesProduced = 6 sequenceNumber = 2
+DEBUG: [HttpClient-2-Worker-0] [1s 532ms] SSL Writer(SocketTube(1)) OK => produced: 6 bytes into 8, not wrapped: 0
+DEBUG: [HttpClient-2-Worker-0] [1s 532ms] SSL Writer(SocketTube(1)) wrapBuffer returned Status = OK HandshakeStatus = NEED_WRAP
+bytesConsumed = 0 bytesProduced = 6 sequenceNumber = 2
+DEBUG: [HttpClient-2-Worker-0] [1s 532ms] SSL Writer(SocketTube(1)) handshaking
+DEBUG: [HttpClient-2-Worker-0] [1s 532ms] SSL Writer(SocketTube(1)) Sending 6 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 532ms] SSL Writer(SocketTube(1)) Adding 6 to outputQ queue
+DEBUG: [HttpClient-2-Worker-0] [1s 532ms] SSL Writer(SocketTube(1)) pushScheduler is alive
+DEBUG: [HttpClient-2-Worker-0] [1s 532ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue not empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 533ms] SSL Writer(SocketTube(1)) DownstreamPusher: Pushing 6 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 533ms] SocketTube(1) trying to write: 6
+DEBUG: [HttpClient-2-Worker-0] [1s 533ms] SocketTube(1) wrote: 6
+DEBUG: [HttpClient-2-Worker-0] [1s 533ms] SocketTube(1) write: requesting more...
+DEBUG: [HttpClient-2-Worker-0] [1s 533ms] SocketTube(1) leaving requestMore:  Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 533ms] SocketTube(1) leaving w.onNext Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 534ms] SSL Writer(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:1
+DEBUG: [HttpClient-2-Worker-0] [1s 534ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 534ms] SSL Writer(SocketTube(1)) wrapping 0 bytes
+DEBUG: [HttpClient-2-Worker-0] [1s 541ms] SSL Writer(SocketTube(1)) SSLResult: Status = OK HandshakeStatus = NEED_UNWRAP
+bytesConsumed = 0 bytesProduced = 45 sequenceNumber = 0
+DEBUG: [HttpClient-2-Worker-0] [1s 541ms] SSL Writer(SocketTube(1)) OK => produced: 45 bytes into 48, not wrapped: 0
+DEBUG: [HttpClient-2-Worker-0] [1s 541ms] SSL Writer(SocketTube(1)) wrapBuffer returned Status = OK HandshakeStatus = NEED_UNWRAP
+bytesConsumed = 0 bytesProduced = 45 sequenceNumber = 0
+DEBUG: [HttpClient-2-Worker-0] [1s 541ms] SSL Writer(SocketTube(1)) handshaking
+DEBUG: [HttpClient-2-Worker-0] [1s 541ms] SSL Writer(SocketTube(1)) Sending 45 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 541ms] SSL Writer(SocketTube(1)) Adding 45 to outputQ queue
+DEBUG: [HttpClient-2-Worker-0] [1s 541ms] SSL Writer(SocketTube(1)) pushScheduler is alive
+DEBUG: [HttpClient-2-Worker-0] [1s 542ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue not empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 542ms] SSL Writer(SocketTube(1)) DownstreamPusher: Pushing 45 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 542ms] SocketTube(1) trying to write: 45
+DEBUG: [HttpClient-2-Worker-0] [1s 542ms] SocketTube(1) wrote: 45
+DEBUG: [HttpClient-2-Worker-0] [1s 543ms] SocketTube(1) write: requesting more...
+DEBUG: [HttpClient-2-Worker-0] [1s 543ms] SocketTube(1) leaving requestMore:  Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 543ms] SocketTube(1) leaving w.onNext Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 543ms] SSL Writer(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:1
+DEBUG: [HttpClient-2-Worker-0] [1s 543ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 543ms] SSL Reader(SocketTube(1)) requesting 1
+DEBUG: [HttpClient-2-Worker-0] [1s 544ms] SocketTube(1) got some demand for reading
+DEBUG: [HttpClient-2-Worker-0] [1s 544ms] SocketTube(1) resuming read event
+DEBUG: [HttpClient-2-Worker-0] [1s 544ms] SocketTube(1) leaving request(1):  Reading: [ops=1, demand=1, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-SelectorManager] [1s 544ms] SelectorAttachment Registering jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent@61c74623 for 1 (false)
+DEBUG: [HttpClient-2-Worker-0] [1s 544ms] SSL Reader(SocketTube(1)) processData: readBuf remaining:0, state: HANDSHAKING , engine handshake status:NEED_UNWRAP
+DEBUG: [HttpClient-2-SelectorManager] [1s 652ms] SelectorAttachment Registering jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent@61c74623 for 0 (false)
+DEBUG: [HttpClient-2-SelectorManager] [1s 652ms] SocketTube(1) read bytes: 359
+DEBUG: [HttpClient-2-SelectorManager] [1s 653ms] SSL Reader(SocketTube(1)) onNext
+DEBUG: [HttpClient-2-SelectorManager] [1s 653ms] SSL Reader(SocketTube(1)) Adding 359 bytes to read buffer
+DEBUG: [HttpClient-2-SelectorManager] [1s 653ms] SocketTube(1) resuming read event
+DEBUG: [HttpClient-2-Worker-0] [1s 653ms] SSL Reader(SocketTube(1)) processData: readBuf remaining:359, state: HANDSHAKING , engine handshake status:NEED_UNWRAP
+DEBUG: [HttpClient-2-SelectorManager] [1s 653ms] SelectorAttachment Registering jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent@61c74623 for 1 (false)
+DEBUG: [HttpClient-2-SelectorManager] [1s 653ms] SocketTube(1) leaving read() loop after onNext:  Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 653ms] SSL Reader(SocketTube(1)) Unwrapping: 359
+DEBUG: [HttpClient-2-Worker-0] [1s 654ms] SSL Reader(SocketTube(1)) Decoded 0 bytes out of 359 into buffer of 512 remaining to decode: 120
+DEBUG: [HttpClient-2-Worker-0] [1s 654ms] SSL Reader(SocketTube(1)) Unwrapped: result: Status = OK HandshakeStatus = NEED_UNWRAP
+bytesConsumed = 239 bytesProduced = 0
+DEBUG: [HttpClient-2-Worker-0] [1s 654ms] SSL Reader(SocketTube(1)) Unwrapped: consumed: 239
+DEBUG: [HttpClient-2-Worker-0] [1s 654ms] SSL Reader(SocketTube(1)) handshaking
+DEBUG: [HttpClient-2-Worker-0] [1s 654ms] SSL Reader(SocketTube(1)) Unwrapping: 120
+DEBUG: [HttpClient-2-Worker-0] [1s 655ms] SSL Reader(SocketTube(1)) Decoded 0 bytes out of 120 into buffer of 512 remaining to decode: 114
+DEBUG: [HttpClient-2-Worker-0] [1s 655ms] SSL Reader(SocketTube(1)) Unwrapped: result: Status = OK HandshakeStatus = NEED_UNWRAP
+bytesConsumed = 6 bytesProduced = 0
+DEBUG: [HttpClient-2-Worker-0] [1s 655ms] SSL Reader(SocketTube(1)) Unwrapped: consumed: 6
+DEBUG: [HttpClient-2-Worker-0] [1s 655ms] SSL Reader(SocketTube(1)) handshaking
+DEBUG: [HttpClient-2-Worker-0] [1s 655ms] SSL Reader(SocketTube(1)) Unwrapping: 114
+DEBUG: [HttpClient-2-Worker-0] [1s 656ms] SSL Reader(SocketTube(1)) Decoded 0 bytes out of 114 into buffer of 512 remaining to decode: 69
+DEBUG: [HttpClient-2-Worker-0] [1s 656ms] SSL Reader(SocketTube(1)) Unwrapped: result: Status = OK HandshakeStatus = FINISHED
+bytesConsumed = 45 bytesProduced = 0
+DEBUG: [HttpClient-2-Worker-0] [1s 656ms] SSL Reader(SocketTube(1)) Unwrapped: consumed: 45
+DEBUG: [HttpClient-2-Worker-0] [1s 656ms] SSLFlowDelegate(SocketTube(1)) setALPN = h2
+DEBUG: [HttpClient-2-Worker-0] [1s 657ms] PlainHttpConnection(SocketTube(1)) finishConnect, setting connected=true
+DEBUG: [HttpClient-2-Worker-0] [1s 658ms] Http2Connection checkSSLConfig: alpn: h2
+DEBUG: [HttpClient-2-Worker-0] [1s 705ms] Http2Connection(SSLTube(SocketTube(1))):WindowUpdateSender(stream: 0) maxFrameSize=16384, initWindowSize=33554432, limit=16777216
+DEBUG: [HttpClient-2-Worker-0] [1s 705ms] SSLTube(SocketTube(1)) connecting flows
+DEBUG: [HttpClient-2-Worker-0] [1s 705ms] SSLTube(SocketTube(1)) SSLSubscriberWrapper (reader) got delegate: jdk.internal.net.http.Http2Connection$Http2TubeSubscriber@7b3aca7b
+DEBUG: [HttpClient-2-Worker-0] [1s 706ms] Http2Connection(SSLTube(SocketTube(1))) onSubscribe: requesting Long.MAX_VALUE for reading
+DEBUG: [HttpClient-2-Worker-0] [1s 706ms] SSL Reader(SocketTube(1)) DownstreamPusher: queue empty, downstreamSubscription: SubscriptionBase: window = 9223372036854775807 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 706ms] SSL Reader(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:0
+DEBUG: [HttpClient-2-Worker-0] [1s 706ms] SSL Reader(SocketTube(1)) DownstreamPusher: queue empty, downstreamSubscription: SubscriptionBase: window = 9223372036854775807 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 706ms] SSL Reader(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:0
+DEBUG: [HttpClient-2-Worker-0] [1s 707ms] SSLTube(SocketTube(1)) setSubscription: demand=1, cancelled:false
+DEBUG: [HttpClient-2-Worker-0] [1s 708ms] AsyncSSLConnection(SSLTube(SocketTube(1))) HttpPublisher: got request of 1 from SSLTube(SocketTube(1))
+DEBUG: [HttpClient-2-Worker-0] [1s 712ms] AsyncSSLConnection(SSLTube(SocketTube(1))) added 63 bytes in the priority write queue
+DEBUG: [HttpClient-2-Worker-0] [1s 712ms] AsyncSSLConnection(SSLTube(SocketTube(1))) signalling the publisher of the write queue
+DEBUG: [HttpClient-2-Worker-0] [1s 718ms] AsyncSSLConnection(SSLTube(SocketTube(1))) HttpPublisher: sending 63 bytes (1 buffers) to SSLTube(SocketTube(1))
+DEBUG: [HttpClient-2-Worker-0] [1s 719ms] SSLTube(SocketTube(1)) sending 1  buffers to SSL flow delegate
+DEBUG: [HttpClient-2-Worker-0] [1s 719ms] SSL Writer(SocketTube(1)) onNext
+DEBUG: [HttpClient-2-Worker-0] [1s 719ms] SSL Writer(SocketTube(1)) added 1 (63 bytes) to the writeList
+DEBUG: [HttpClient-2-Worker-0] [1s 719ms] SSL Writer(SocketTube(1)) processData, writeList remaining:63, hsTriggered:false, needWrap:false
+DEBUG: [HttpClient-2-Worker-0] [1s 719ms] SSL Writer(SocketTube(1)) wrapping 63 bytes
+DEBUG: [HttpClient-2-Worker-0] [1s 719ms] SSL Writer(SocketTube(1)) SSLResult: Status = OK HandshakeStatus = NOT_HANDSHAKING
+bytesConsumed = 63 bytesProduced = 92 sequenceNumber = 1
+DEBUG: [HttpClient-2-Worker-0] [1s 720ms] SSL Writer(SocketTube(1)) OK => produced: 92 bytes into 96, not wrapped: 0
+DEBUG: [HttpClient-2-Worker-0] [1s 720ms] SSL Writer(SocketTube(1)) wrapBuffer returned Status = OK HandshakeStatus = NOT_HANDSHAKING
+bytesConsumed = 63 bytesProduced = 92 sequenceNumber = 1
+DEBUG: [HttpClient-2-Worker-0] [1s 720ms] SSL Writer(SocketTube(1)) Sending 92 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 720ms] SSL Writer(SocketTube(1)) Adding 92 to outputQ queue
+DEBUG: [HttpClient-2-Worker-0] [1s 720ms] SSL Writer(SocketTube(1)) pushScheduler is alive
+DEBUG: [HttpClient-2-Worker-0] [1s 720ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue not empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 720ms] SSL Writer(SocketTube(1)) DownstreamPusher: Pushing 92 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 720ms] SocketTube(1) trying to write: 92
+DEBUG: [HttpClient-2-Worker-0] [1s 720ms] SocketTube(1) wrote: 92
+DEBUG: [HttpClient-2-Worker-0] [1s 720ms] SocketTube(1) write: requesting more...
+DEBUG: [HttpClient-2-Worker-0] [1s 720ms] SocketTube(1) leaving requestMore:  Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 720ms] SocketTube(1) leaving w.onNext Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 721ms] SSL Writer(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:0
+DEBUG: [HttpClient-2-Worker-0] [1s 721ms] SSL Writer(SocketTube(1)) requesting 1
+DEBUG: [HttpClient-2-Worker-0] [1s 721ms] SSLTube(SocketTube(1)) request: n=1
+DEBUG: [HttpClient-2-Worker-0] [1s 721ms] AsyncSSLConnection(SSLTube(SocketTube(1))) HttpPublisher: got request of 1 from SSLTube(SocketTube(1))
+DEBUG: [HttpClient-2-Worker-0] [1s 721ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 721ms] Http2Connection(SSLTube(SocketTube(1))):WindowUpdateSender(stream: 0) sending window update: 33488897
+DEBUG: [HttpClient-2-Worker-0] [1s 721ms] AsyncSSLConnection(SSLTube(SocketTube(1))) added 13 bytes in the priority write queue
+DEBUG: [HttpClient-2-Worker-0] [1s 721ms] AsyncSSLConnection(SSLTube(SocketTube(1))) signalling the publisher of the write queue
+DEBUG: [HttpClient-2-Worker-0] [1s 722ms] AsyncSSLConnection(SSLTube(SocketTube(1))) HttpPublisher: sending 13 bytes (1 buffers) to SSLTube(SocketTube(1))
+DEBUG: [HttpClient-2-Worker-0] [1s 722ms] SSLTube(SocketTube(1)) sending 1  buffers to SSL flow delegate
+DEBUG: [HttpClient-2-Worker-0] [1s 722ms] SSL Writer(SocketTube(1)) onNext
+DEBUG: [HttpClient-2-Worker-0] [1s 722ms] SSL Writer(SocketTube(1)) added 1 (13 bytes) to the writeList
+DEBUG: [HttpClient-2-Worker-0] [1s 722ms] SSL Writer(SocketTube(1)) processData, writeList remaining:13, hsTriggered:false, needWrap:false
+DEBUG: [HttpClient-2-Worker-0] [1s 722ms] SSL Writer(SocketTube(1)) wrapping 13 bytes
+DEBUG: [HttpClient-2-Worker-0] [1s 722ms] SSL Writer(SocketTube(1)) SSLResult: Status = OK HandshakeStatus = NOT_HANDSHAKING
+bytesConsumed = 13 bytesProduced = 42 sequenceNumber = 2
+DEBUG: [HttpClient-2-Worker-0] [1s 722ms] SSL Writer(SocketTube(1)) OK => produced: 42 bytes into 48, not wrapped: 0
+DEBUG: [HttpClient-2-Worker-0] [1s 722ms] SSL Writer(SocketTube(1)) wrapBuffer returned Status = OK HandshakeStatus = NOT_HANDSHAKING
+bytesConsumed = 13 bytesProduced = 42 sequenceNumber = 2
+DEBUG: [HttpClient-2-Worker-0] [1s 722ms] SSL Writer(SocketTube(1)) Sending 42 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 722ms] SSL Writer(SocketTube(1)) Adding 42 to outputQ queue
+DEBUG: [HttpClient-2-Worker-0] [1s 723ms] SSL Writer(SocketTube(1)) pushScheduler is alive
+DEBUG: [HttpClient-2-Worker-0] [1s 723ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue not empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 723ms] SSL Writer(SocketTube(1)) DownstreamPusher: Pushing 42 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 723ms] SocketTube(1) trying to write: 42
+DEBUG: [HttpClient-2-Worker-0] [1s 723ms] SocketTube(1) wrote: 42
+DEBUG: [HttpClient-2-Worker-0] [1s 723ms] SocketTube(1) write: requesting more...
+DEBUG: [HttpClient-2-Worker-0] [1s 723ms] SocketTube(1) leaving requestMore:  Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 723ms] SocketTube(1) leaving w.onNext Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 723ms] SSL Writer(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:0
+DEBUG: [HttpClient-2-Worker-0] [1s 724ms] SSL Writer(SocketTube(1)) requesting 1
+DEBUG: [HttpClient-2-Worker-0] [1s 724ms] SSLTube(SocketTube(1)) request: n=1
+DEBUG: [HttpClient-2-Worker-0] [1s 724ms] AsyncSSLConnection(SSLTube(SocketTube(1))) HttpPublisher: got request of 1 from SSLTube(SocketTube(1))
+DEBUG: [HttpClient-2-Worker-0] [1s 724ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 724ms] Http2Connection(SSLTube(SocketTube(1))) Triggering processing of buffered data after sending connection preface
+DEBUG: [HttpClient-2-Worker-0] [1s 731ms] Http2Connection(SSLTube(SocketTube(1))) onNext: got 0 bytes in 1 buffers
+DEBUG: [HttpClient-2-Worker-0] [1s 731ms] Http2Connection(SSLTube(SocketTube(1))) sending 0 to Http2Connection.asyncReceive
+DEBUG: [HttpClient-2-Worker-0] [1s 731ms] Http2Connection(SSLTube(SocketTube(1))) H2 Received EMPTY_TRIGGER
+DEBUG: [HttpClient-2-Worker-0] [1s 731ms] Http2Connection(SSLTube(SocketTube(1))) H2 processed buffered data
+DEBUG: [HttpClient-2-Worker-0] [1s 732ms] Http2ClientImpl offering to the connection pool: Http2Connection(SSLTube(SocketTube(1)))
+DEBUG: [HttpClient-2-Worker-0] [1s 732ms] Http2ClientImpl put in the connection pool: Http2Connection(SSLTube(SocketTube(1)))
+DEBUG: [HttpClient-2-Worker-0] [1s 732ms] ExchangeImpl handling HTTP/2 connection creation result
+DEBUG: [HttpClient-2-Worker-0] [1s 732ms] ExchangeImpl creating HTTP/2 streams
+DEBUG: [HttpClient-2-Worker-0] [1s 739ms] Http2Connection(SSLTube(SocketTube(1))):WindowUpdateSender(stream: ?) maxFrameSize=16384, initWindowSize=16777216, limit=8388608
+DEBUG: [HttpClient-2-Worker-0] [1s 740ms] Exchange checkFor407: all clear
+DEBUG: [HttpClient-2-Worker-0] [1s 741ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(0) sendHeadersOnly()
+DEBUG: [HttpClient-2-Worker-0] [1s 743ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) Stream 1 registered (cancelled: false, registerIfCancelled: false)
+DEBUG: [HttpClient-2-Worker-0] [1s 747ms] AsyncSSLConnection(SSLTube(SocketTube(1))) added 89 bytes to the write queue
+DEBUG: [HttpClient-2-Worker-0] [1s 747ms] AsyncSSLConnection(SSLTube(SocketTube(1))) signalling the publisher of the write queue
+DEBUG: [HttpClient-2-Worker-0] [1s 747ms] AsyncSSLConnection(SSLTube(SocketTube(1))) HttpPublisher: sending 89 bytes (2 buffers) to SSLTube(SocketTube(1))
+DEBUG: [HttpClient-2-Worker-0] [1s 747ms] SSLTube(SocketTube(1)) sending 2  buffers to SSL flow delegate
+DEBUG: [HttpClient-2-Worker-0] [1s 747ms] SSL Writer(SocketTube(1)) onNext
+DEBUG: [HttpClient-2-Worker-0] [1s 748ms] SSL Writer(SocketTube(1)) added 2 (89 bytes) to the writeList
+DEBUG: [HttpClient-2-Worker-0] [1s 748ms] SSL Writer(SocketTube(1)) processData, writeList remaining:89, hsTriggered:false, needWrap:false
+DEBUG: [HttpClient-2-Worker-0] [1s 748ms] SSL Writer(SocketTube(1)) wrapping 89 bytes
+DEBUG: [HttpClient-2-Worker-0] [1s 749ms] SSL Writer(SocketTube(1)) SSLResult: Status = OK HandshakeStatus = NOT_HANDSHAKING
+bytesConsumed = 89 bytesProduced = 118 sequenceNumber = 3
+DEBUG: [HttpClient-2-Worker-0] [1s 750ms] SSL Writer(SocketTube(1)) OK => produced: 118 bytes into 120, not wrapped: 0
+DEBUG: [HttpClient-2-Worker-0] [1s 750ms] SSL Writer(SocketTube(1)) wrapBuffer returned Status = OK HandshakeStatus = NOT_HANDSHAKING
+bytesConsumed = 89 bytesProduced = 118 sequenceNumber = 3
+DEBUG: [HttpClient-2-Worker-0] [1s 750ms] SSL Writer(SocketTube(1)) Sending 118 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 750ms] SSL Writer(SocketTube(1)) Adding 118 to outputQ queue
+DEBUG: [HttpClient-2-Worker-0] [1s 750ms] SSL Writer(SocketTube(1)) pushScheduler is alive
+DEBUG: [HttpClient-2-Worker-0] [1s 750ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue not empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 750ms] SSL Writer(SocketTube(1)) DownstreamPusher: Pushing 118 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 750ms] SocketTube(1) trying to write: 118
+DEBUG: [HttpClient-2-Worker-0] [1s 751ms] SocketTube(1) wrote: 118
+DEBUG: [HttpClient-2-Worker-0] [1s 751ms] SocketTube(1) write: requesting more...
+DEBUG: [HttpClient-2-Worker-0] [1s 751ms] SocketTube(1) leaving requestMore:  Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 751ms] SocketTube(1) leaving w.onNext Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 751ms] SSL Writer(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:0
+DEBUG: [HttpClient-2-Worker-0] [1s 751ms] SSL Writer(SocketTube(1)) requesting 1
+DEBUG: [HttpClient-2-Worker-0] [1s 751ms] SSLTube(SocketTube(1)) request: n=1
+DEBUG: [HttpClient-2-Worker-0] [1s 752ms] AsyncSSLConnection(SSLTube(SocketTube(1))) HttpPublisher: got request of 1 from SSLTube(SocketTube(1))
+DEBUG: [HttpClient-2-Worker-0] [1s 752ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 753ms] Exchange checkFor407: all clear
+DEBUG: [HttpClient-2-Worker-0] [1s 753ms] Exchange sendRequestBody
+DEBUG: [HttpClient-2-Worker-0] [1s 758ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) RequestSubscriber: onSubscribe, request 1
+DEBUG: [HttpClient-2-Worker-0] [1s 759ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) RequestSubscriber: onNext(5)
+DEBUG: [HttpClient-2-Worker-0] [1s 759ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) trySend: 5
+DEBUG: [HttpClient-2-Worker-0] [1s 760ms] WindowController Stream 1 amount allocated 5, now 65530 available (stream: 65530, connection: 65530)
+DEBUG: [HttpClient-2-Worker-0] [1s 760ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) trySend: sending: 5
+DEBUG: [HttpClient-2-Worker-0] [1s 760ms] AsyncSSLConnection(SSLTube(SocketTube(1))) added 14 bytes to the write queue
+DEBUG: [HttpClient-2-Worker-0] [1s 760ms] AsyncSSLConnection(SSLTube(SocketTube(1))) signalling the publisher of the write queue
+DEBUG: [HttpClient-2-Worker-0] [1s 761ms] AsyncSSLConnection(SSLTube(SocketTube(1))) HttpPublisher: sending 14 bytes (2 buffers) to SSLTube(SocketTube(1))
+DEBUG: [HttpClient-2-Worker-0] [1s 761ms] SSLTube(SocketTube(1)) sending 2  buffers to SSL flow delegate
+DEBUG: [HttpClient-2-Worker-0] [1s 761ms] SSL Writer(SocketTube(1)) onNext
+DEBUG: [HttpClient-2-Worker-0] [1s 761ms] SSL Writer(SocketTube(1)) added 2 (14 bytes) to the writeList
+DEBUG: [HttpClient-2-Worker-0] [1s 761ms] SSL Writer(SocketTube(1)) processData, writeList remaining:14, hsTriggered:false, needWrap:false
+DEBUG: [HttpClient-2-Worker-0] [1s 761ms] SSL Writer(SocketTube(1)) wrapping 14 bytes
+DEBUG: [HttpClient-2-Worker-0] [1s 762ms] SSL Writer(SocketTube(1)) SSLResult: Status = OK HandshakeStatus = NOT_HANDSHAKING
+bytesConsumed = 14 bytesProduced = 43 sequenceNumber = 4
+DEBUG: [HttpClient-2-Worker-0] [1s 763ms] SSL Writer(SocketTube(1)) OK => produced: 43 bytes into 48, not wrapped: 0
+DEBUG: [HttpClient-2-Worker-0] [1s 763ms] SSL Writer(SocketTube(1)) wrapBuffer returned Status = OK HandshakeStatus = NOT_HANDSHAKING
+bytesConsumed = 14 bytesProduced = 43 sequenceNumber = 4
+DEBUG: [HttpClient-2-Worker-0] [1s 763ms] SSL Writer(SocketTube(1)) Sending 43 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 763ms] SSL Writer(SocketTube(1)) Adding 43 to outputQ queue
+DEBUG: [HttpClient-2-Worker-0] [1s 763ms] SSL Writer(SocketTube(1)) pushScheduler is alive
+DEBUG: [HttpClient-2-Worker-0] [1s 763ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue not empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 763ms] SSL Writer(SocketTube(1)) DownstreamPusher: Pushing 43 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 764ms] SocketTube(1) trying to write: 43
+DEBUG: [HttpClient-2-Worker-0] [1s 764ms] SocketTube(1) wrote: 43
+DEBUG: [HttpClient-2-Worker-0] [1s 764ms] SocketTube(1) write: requesting more...
+DEBUG: [HttpClient-2-Worker-0] [1s 764ms] SocketTube(1) leaving requestMore:  Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 764ms] SocketTube(1) leaving w.onNext Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 764ms] SSL Writer(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:0
+DEBUG: [HttpClient-2-Worker-0] [1s 764ms] SSL Writer(SocketTube(1)) requesting 1
+DEBUG: [HttpClient-2-Worker-0] [1s 765ms] SSLTube(SocketTube(1)) request: n=1
+DEBUG: [HttpClient-2-Worker-0] [1s 765ms] AsyncSSLConnection(SSLTube(SocketTube(1))) HttpPublisher: got request of 1 from SSLTube(SocketTube(1))
+DEBUG: [HttpClient-2-Worker-0] [1s 765ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 765ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) trySend: request 1
+DEBUG: [HttpClient-2-Worker-0] [1s 765ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) RequestSubscriber: onComplete
+DEBUG: [HttpClient-2-Worker-0] [1s 765ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) requestSent: streamid=1 but response not received
+DEBUG: [HttpClient-2-Worker-0] [1s 769ms] SSL Writer(SocketTube(1)) processData, writeList remaining:0, hsTriggered:false, needWrap:false
+DEBUG: [HttpClient-2-Worker-0] [1s 769ms] SSL Reader(SocketTube(1)) Unwrapping: 69
+DEBUG: [HttpClient-2-Worker-0] [1s 770ms] SSL Reader(SocketTube(1)) Decoded 40 bytes out of 69 into buffer of 512 remaining to decode: 0
+DEBUG: [HttpClient-2-Worker-0] [1s 771ms] SSL Reader(SocketTube(1)) Unwrapped: result: Status = OK HandshakeStatus = NOT_HANDSHAKING
+bytesConsumed = 69 bytesProduced = 40
+DEBUG: [HttpClient-2-Worker-0] [1s 771ms] SSL Reader(SocketTube(1)) Unwrapped: consumed: 69
+DEBUG: [HttpClient-2-Worker-0] [1s 771ms] SSL Reader(SocketTube(1)) sending 40
+DEBUG: [HttpClient-2-Worker-0] [1s 771ms] SSL Reader(SocketTube(1)) Adding 40 to outputQ queue
+DEBUG: [HttpClient-2-Worker-0] [1s 771ms] SSL Reader(SocketTube(1)) pushScheduler is alive
+DEBUG: [HttpClient-2-Worker-0] [1s 771ms] SSL Reader(SocketTube(1)) DownstreamPusher: queue not empty, downstreamSubscription: SubscriptionBase: window = 9223372036854775807 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 771ms] SSL Reader(SocketTube(1)) DownstreamPusher: Pushing 40 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 772ms] Http2Connection(SSLTube(SocketTube(1))) onNext: got 40 bytes in 1 buffers
+DEBUG: [HttpClient-2-Worker-0] [1s 772ms] Http2Connection(SSLTube(SocketTube(1))) sending 40 to Http2Connection.asyncReceive
+DEBUG: [HttpClient-2-Worker-0] [1s 772ms] Http2Connection(SSLTube(SocketTube(1))) H2 Receiving(1): 40
+DEBUG: [HttpClient-2-Worker-0] [1s 772ms] Http2Connection(SSLTube(SocketTube(1))) Processing 40
+DEBUG: [HttpClient-2-Worker-0] [1s 772ms] FramesDecoder decodes: 40
+DEBUG: [HttpClient-2-Worker-0] [1s 772ms] FramesDecoder Tail size is now: 0, current=
+DEBUG: [HttpClient-2-Worker-0] [1s 773ms] FramesDecoder Got frame: SETTINGS: length=18, streamid=0, flags=0  Settings: MAX_CONCURRENT_STREAMS=128 INITIAL_WINDOW_SIZE=65536 MAX_FRAME_SIZE=16777215 
+DEBUG: [HttpClient-2-Worker-0] [1s 773ms] WindowController Stream 1 window size is now 65531 (adjusting amount 1)
+DEBUG: [HttpClient-2-Worker-0] [1s 773ms] AsyncSSLConnection(SSLTube(SocketTube(1))) added 9 bytes to the write queue
+DEBUG: [HttpClient-2-Worker-0] [1s 773ms] AsyncSSLConnection(SSLTube(SocketTube(1))) signalling the publisher of the write queue
+DEBUG: [HttpClient-2-Worker-0] [1s 774ms] AsyncSSLConnection(SSLTube(SocketTube(1))) HttpPublisher: sending 9 bytes (1 buffers) to SSLTube(SocketTube(1))
+DEBUG: [HttpClient-2-Worker-0] [1s 774ms] SSLTube(SocketTube(1)) sending 1  buffers to SSL flow delegate
+DEBUG: [HttpClient-2-Worker-0] [1s 774ms] SSL Writer(SocketTube(1)) onNext
+DEBUG: [HttpClient-2-Worker-0] [1s 774ms] SSL Writer(SocketTube(1)) added 1 (9 bytes) to the writeList
+DEBUG: [HttpClient-2-Worker-0] [1s 774ms] SSL Writer(SocketTube(1)) processData, writeList remaining:9, hsTriggered:false, needWrap:false
+DEBUG: [HttpClient-2-Worker-0] [1s 774ms] SSL Writer(SocketTube(1)) wrapping 9 bytes
+DEBUG: [HttpClient-2-Worker-0] [1s 775ms] SSL Writer(SocketTube(1)) SSLResult: Status = OK HandshakeStatus = NOT_HANDSHAKING
+bytesConsumed = 9 bytesProduced = 38 sequenceNumber = 5
+DEBUG: [HttpClient-2-Worker-0] [1s 775ms] SSL Writer(SocketTube(1)) OK => produced: 38 bytes into 40, not wrapped: 0
+DEBUG: [HttpClient-2-Worker-0] [1s 775ms] SSL Writer(SocketTube(1)) wrapBuffer returned Status = OK HandshakeStatus = NOT_HANDSHAKING
+bytesConsumed = 9 bytesProduced = 38 sequenceNumber = 5
+DEBUG: [HttpClient-2-Worker-0] [1s 775ms] SSL Writer(SocketTube(1)) Sending 38 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 775ms] SSL Writer(SocketTube(1)) Adding 38 to outputQ queue
+DEBUG: [HttpClient-2-Worker-0] [1s 776ms] SSL Writer(SocketTube(1)) pushScheduler is alive
+DEBUG: [HttpClient-2-Worker-0] [1s 776ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue not empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 776ms] SSL Writer(SocketTube(1)) DownstreamPusher: Pushing 38 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 776ms] SocketTube(1) trying to write: 38
+DEBUG: [HttpClient-2-Worker-0] [1s 777ms] SocketTube(1) wrote: 38
+DEBUG: [HttpClient-2-Worker-0] [1s 777ms] SocketTube(1) write: requesting more...
+DEBUG: [HttpClient-2-Worker-0] [1s 777ms] SocketTube(1) leaving requestMore:  Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 777ms] SocketTube(1) leaving w.onNext Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 777ms] SSL Writer(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:0
+DEBUG: [HttpClient-2-Worker-0] [1s 777ms] SSL Writer(SocketTube(1)) requesting 1
+DEBUG: [HttpClient-2-Worker-0] [1s 777ms] SSLTube(SocketTube(1)) request: n=1
+DEBUG: [HttpClient-2-Worker-0] [1s 777ms] AsyncSSLConnection(SSLTube(SocketTube(1))) HttpPublisher: got request of 1 from SSLTube(SocketTube(1))
+DEBUG: [HttpClient-2-Worker-0] [1s 778ms] SSL Writer(SocketTube(1)) DownstreamPusher: queue empty, downstreamSubscription: SubscriptionBase: window = 1 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 778ms] FramesDecoder Got frame: WINDOW_UPDATE: length=4, streamid=0, flags=0  WindowUpdate: 2147418112
+DEBUG: [HttpClient-2-Worker-0] [1s 778ms] WindowController Connection window size is now 2147483642 (amount added 2147418112)
+DEBUG: [HttpClient-2-Worker-0] [1s 778ms] Http2Connection(SSLTube(SocketTube(1))) H2 processed(1)
+DEBUG: [HttpClient-2-Worker-0] [1s 778ms] SSL Reader(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:0
+DEBUG: [HttpClient-2-Worker-0] [1s 779ms] SSL Reader(SocketTube(1)) requesting 1
+DEBUG: [HttpClient-2-Worker-0] [1s 779ms] SocketTube(1) got some demand for reading
+DEBUG: [HttpClient-2-Worker-0] [1s 779ms] SocketTube(1) resuming read event
+DEBUG: [HttpClient-2-Worker-0] [1s 779ms] SocketTube(1) leaving request(1):  Reading: [ops=1, demand=1, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-SelectorManager] [1s 779ms] SelectorAttachment Registering jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent@61c74623 for 1 (false)
+DEBUG: [HttpClient-2-Worker-0] [1s 779ms] SSL Reader(SocketTube(1)) processData: readBuf remaining:0, state: NOT_HANDSHAKING , engine handshake status:NOT_HANDSHAKING
+DEBUG: [HttpClient-2-SelectorManager] [1s 829ms] SelectorAttachment Registering jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent@61c74623 for 0 (false)
+DEBUG: [HttpClient-2-SelectorManager] [1s 830ms] SocketTube(1) read bytes: 38
+DEBUG: [HttpClient-2-SelectorManager] [1s 830ms] SSL Reader(SocketTube(1)) onNext
+DEBUG: [HttpClient-2-SelectorManager] [1s 830ms] SSL Reader(SocketTube(1)) Adding 38 bytes to read buffer
+DEBUG: [HttpClient-2-SelectorManager] [1s 830ms] SocketTube(1) resuming read event
+DEBUG: [HttpClient-2-Worker-0] [1s 830ms] SSL Reader(SocketTube(1)) processData: readBuf remaining:38, state: NOT_HANDSHAKING , engine handshake status:NOT_HANDSHAKING
+DEBUG: [HttpClient-2-SelectorManager] [1s 830ms] SelectorAttachment Registering jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent@61c74623 for 1 (false)
+DEBUG: [HttpClient-2-Worker-0] [1s 830ms] SSL Reader(SocketTube(1)) Unwrapping: 38
+DEBUG: [HttpClient-2-SelectorManager] [1s 830ms] SocketTube(1) leaving read() loop after onNext:  Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] SSL Reader(SocketTube(1)) Decoded 9 bytes out of 38 into buffer of 40 remaining to decode: 0
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] SSL Reader(SocketTube(1)) Unwrapped: result: Status = OK HandshakeStatus = NOT_HANDSHAKING
+bytesConsumed = 38 bytesProduced = 9
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] SSL Reader(SocketTube(1)) Unwrapped: consumed: 38
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] SSL Reader(SocketTube(1)) sending 9
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] SSL Reader(SocketTube(1)) Adding 9 to outputQ queue
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] SSL Reader(SocketTube(1)) pushScheduler is alive
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] SSL Reader(SocketTube(1)) DownstreamPusher: queue not empty, downstreamSubscription: SubscriptionBase: window = 9223372036854775806 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] SSL Reader(SocketTube(1)) DownstreamPusher: Pushing 9 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] Http2Connection(SSLTube(SocketTube(1))) onNext: got 9 bytes in 1 buffers
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] Http2Connection(SSLTube(SocketTube(1))) sending 9 to Http2Connection.asyncReceive
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] Http2Connection(SSLTube(SocketTube(1))) H2 Receiving(2): 9
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] Http2Connection(SSLTube(SocketTube(1))) Processing 9
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] FramesDecoder decodes: 9
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] FramesDecoder Tail size is now: 0, current=
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] FramesDecoder Got frame: SETTINGS: length=0, streamid=0, flags=ACK  Settings: 
+DEBUG: [HttpClient-2-Worker-0] [1s 831ms] Http2Connection(SSLTube(SocketTube(1))) H2 processed(2)
+DEBUG: [HttpClient-2-Worker-0] [1s 832ms] SSL Reader(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:0
+DEBUG: [HttpClient-2-Worker-0] [1s 832ms] SSL Reader(SocketTube(1)) requesting 1
+DEBUG: [HttpClient-2-Worker-0] [1s 832ms] SocketTube(1) got some demand for reading
+DEBUG: [HttpClient-2-Worker-0] [1s 832ms] SocketTube(1) resuming read event
+DEBUG: [HttpClient-2-Worker-0] [1s 832ms] SocketTube(1) leaving request(1):  Reading: [ops=1, demand=1, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 832ms] SSL Reader(SocketTube(1)) processData: readBuf remaining:0, state: NOT_HANDSHAKING , engine handshake status:NOT_HANDSHAKING
+DEBUG: [HttpClient-2-SelectorManager] [1s 832ms] SelectorAttachment Registering jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent@61c74623 for 1 (false)
+DEBUG: [HttpClient-2-SelectorManager] [1s 986ms] SelectorAttachment Registering jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent@61c74623 for 0 (false)
+DEBUG: [HttpClient-2-SelectorManager] [1s 986ms] SocketTube(1) read bytes: 331
+DEBUG: [HttpClient-2-SelectorManager] [1s 986ms] SSL Reader(SocketTube(1)) onNext
+DEBUG: [HttpClient-2-SelectorManager] [1s 986ms] SSL Reader(SocketTube(1)) Adding 331 bytes to read buffer
+DEBUG: [HttpClient-2-SelectorManager] [1s 986ms] SocketTube(1) resuming read event
+DEBUG: [HttpClient-2-SelectorManager] [1s 986ms] SelectorAttachment Registering jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent@61c74623 for 1 (false)
+DEBUG: [HttpClient-2-Worker-0] [1s 986ms] SSL Reader(SocketTube(1)) processData: readBuf remaining:331, state: NOT_HANDSHAKING , engine handshake status:NOT_HANDSHAKING
+DEBUG: [HttpClient-2-SelectorManager] [1s 986ms] SocketTube(1) leaving read() loop after onNext:  Reading: [ops=1, demand=0, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [1s 986ms] SSL Reader(SocketTube(1)) Unwrapping: 331
+DEBUG: [HttpClient-2-Worker-0] [1s 989ms] SSL Reader(SocketTube(1)) Decoded 264 bytes out of 331 into buffer of 16680 remaining to decode: 38
+DEBUG: [HttpClient-2-Worker-0] [1s 989ms] SSL Reader(SocketTube(1)) Unwrapped: result: Status = OK HandshakeStatus = NOT_HANDSHAKING
+bytesConsumed = 293 bytesProduced = 264
+DEBUG: [HttpClient-2-Worker-0] [1s 989ms] SSL Reader(SocketTube(1)) Unwrapped: consumed: 293
+DEBUG: [HttpClient-2-Worker-0] [1s 989ms] SSL Reader(SocketTube(1)) sending 264
+DEBUG: [HttpClient-2-Worker-0] [1s 989ms] SSL Reader(SocketTube(1)) Adding 264 to outputQ queue
+DEBUG: [HttpClient-2-Worker-0] [1s 989ms] SSL Reader(SocketTube(1)) pushScheduler is alive
+DEBUG: [HttpClient-2-Worker-0] [1s 990ms] SSL Reader(SocketTube(1)) DownstreamPusher: queue not empty, downstreamSubscription: SubscriptionBase: window = 9223372036854775805 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [1s 990ms] SSL Reader(SocketTube(1)) DownstreamPusher: Pushing 264 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [1s 990ms] Http2Connection(SSLTube(SocketTube(1))) onNext: got 264 bytes in 1 buffers
+DEBUG: [HttpClient-2-Worker-0] [1s 990ms] Http2Connection(SSLTube(SocketTube(1))) sending 264 to Http2Connection.asyncReceive
+DEBUG: [HttpClient-2-Worker-0] [1s 990ms] Http2Connection(SSLTube(SocketTube(1))) H2 Receiving(3): 264
+DEBUG: [HttpClient-2-Worker-0] [1s 990ms] Http2Connection(SSLTube(SocketTube(1))) Processing 264
+DEBUG: [HttpClient-2-Worker-0] [1s 990ms] FramesDecoder decodes: 264
+DEBUG: [HttpClient-2-Worker-0] [1s 990ms] FramesDecoder Tail size is now: 0, current=
+DEBUG: [HttpClient-2-Worker-0] [1s 990ms] FramesDecoder Got frame: HEADERS: length=242, streamid=1, flags=END_HEADERS 
+DEBUG: [HttpClient-2-Worker-0] [1s 994ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) incoming: HEADERS: length=242, streamid=1, flags=END_HEADERS 
+DEBUG: [HttpClient-2-Worker-0] [2s 1ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) Response builder cleared, ready to receive new headers.
+DEBUG: [HttpClient-2-Worker-0] [2s 1ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) Completing responseCF(0) with response headers
+DEBUG: [HttpClient-2-Worker-0] [2s 2ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) Getting BodySubscriber for: (POST https://obscured.mock.pstmn.io/obscured) 202 HTTP_2 Local port:  51242
+DEBUG: [HttpClient-2-Worker-0] [2s 11ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) subscribing user subscriber
+DEBUG: [HttpClient-2-Worker-0] [2s 14ms] FramesDecoder Got frame: DATA: length=4, streamid=1, flags=0 
+DEBUG: [HttpClient-2-Worker-0] [2s 14ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) incoming: DATA: length=4, streamid=1, flags=0 
+DEBUG: [HttpClient-2-Worker-0] [2s 15ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) incoming: onNext(4)
+DEBUG: [HttpClient-2-Worker-0] [2s 15ms] Http2Connection(SSLTube(SocketTube(1))):WindowUpdateSender(stream: 0) update: 4, received: 4, limit: 16777216
+DEBUG: [HttpClient-2-Worker-0] [2s 15ms] Http2Connection(SSLTube(SocketTube(1))):WindowUpdateSender(stream: 1) update: 4, received: 4, limit: 8388608
+DEBUG: [HttpClient-2-Worker-0] [2s 16ms] Http2Connection(SSLTube(SocketTube(1))) H2 processed(3)
+DEBUG: [HttpClient-2-Worker-0] [2s 16ms] SSL Reader(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:0
+DEBUG: [HttpClient-2-Worker-0] [2s 16ms] SSL Reader(SocketTube(1)) Unwrapping: 38
+DEBUG: [HttpClient-2-Worker-0] [2s 16ms] SSL Reader(SocketTube(1)) Decoded 9 bytes out of 38 into buffer of 264 remaining to decode: 0
+DEBUG: [HttpClient-2-Worker-0] [2s 17ms] SSL Reader(SocketTube(1)) Unwrapped: result: Status = OK HandshakeStatus = NOT_HANDSHAKING
+bytesConsumed = 38 bytesProduced = 9
+DEBUG: [HttpClient-2-Worker-0] [2s 17ms] SSL Reader(SocketTube(1)) Unwrapped: consumed: 38
+DEBUG: [HttpClient-2-Worker-0] [2s 17ms] SSL Reader(SocketTube(1)) sending 9
+DEBUG: [HttpClient-2-Worker-0] [2s 17ms] SSL Reader(SocketTube(1)) Adding 9 to outputQ queue
+DEBUG: [HttpClient-2-Worker-0] [2s 17ms] SSL Reader(SocketTube(1)) pushScheduler is alive
+DEBUG: [HttpClient-2-Worker-0] [2s 17ms] SSL Reader(SocketTube(1)) DownstreamPusher: queue not empty, downstreamSubscription: SubscriptionBase: window = 9223372036854775804 cancelled = false
+DEBUG: [HttpClient-2-Worker-0] [2s 17ms] SSL Reader(SocketTube(1)) DownstreamPusher: Pushing 9 bytes downstream
+DEBUG: [HttpClient-2-Worker-0] [2s 18ms] Http2Connection(SSLTube(SocketTube(1))) onNext: got 9 bytes in 1 buffers
+DEBUG: [HttpClient-2-Worker-0] [2s 18ms] Http2Connection(SSLTube(SocketTube(1))) sending 9 to Http2Connection.asyncReceive
+DEBUG: [HttpClient-2-Worker-0] [2s 18ms] Http2Connection(SSLTube(SocketTube(1))) H2 Receiving(4): 9
+DEBUG: [HttpClient-2-Worker-0] [2s 18ms] Http2Connection(SSLTube(SocketTube(1))) Processing 9
+DEBUG: [HttpClient-2-Worker-0] [2s 18ms] FramesDecoder decodes: 9
+DEBUG: [HttpClient-2-Worker-0] [2s 18ms] FramesDecoder Tail size is now: 0, current=
+DEBUG: [HttpClient-2-Worker-0] [2s 18ms] FramesDecoder Got frame: DATA: length=0, streamid=1, flags=END_STREAM 
+DEBUG: [HttpClient-2-Worker-0] [2s 18ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) incoming: DATA: length=0, streamid=1, flags=END_STREAM 
+DEBUG: [HttpClient-2-Worker-0] [2s 19ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) incoming: onComplete
+DEBUG: [HttpClient-2-Worker-0] [2s 32ms] HttpClientImpl(2) ClientImpl (async) elapsed 1148 millis for POST to https://obscured.mock.pstmn.io/obscured
+DEBUG: [HttpClient-2-Worker-0] [2s 32ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) setEndStreamReceived: streamid=1
+DEBUG: [HttpClient-2-Worker-0] [2s 32ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) responseReceived: streamid=1
+DEBUG: [HttpClient-2-Worker-0] [2s 33ms] Http2Connection(SSLTube(SocketTube(1)))/Stream(1) close stream 1
+DEBUG: [HttpClient-2-Worker-0] [2s 33ms] Http2Connection(SSLTube(SocketTube(1))) Closed stream 1
+DEBUG: [HttpClient-2-Worker-0] [2s 33ms] Http2Connection(SSLTube(SocketTube(1))) H2 processed(4)
+DEBUG: [HttpClient-2-Worker-0] [2s 33ms] SSL Reader(SocketTube(1)) upstreamWindowUpdate, downstreamQueueSize:0, upstreamWindow:0
+DEBUG: [HttpClient-2-Worker-0] [2s 33ms] SSL Reader(SocketTube(1)) requesting 1
+DEBUG: [HttpClient-2-Worker-0] [2s 33ms] SocketTube(1) got some demand for reading
+DEBUG: [HttpClient-2-Worker-0] [2s 33ms] SocketTube(1) resuming read event
+DEBUG: [HttpClient-2-Worker-0] [2s 34ms] SocketTube(1) leaving request(1):  Reading: [ops=1, demand=1, stopped=false], Writing: [ops=0, demand=1]
+DEBUG: [HttpClient-2-Worker-0] [2s 34ms] SSL Reader(SocketTube(1)) processData: readBuf remaining:0, state: NOT_HANDSHAKING , engine handshake status:NOT_HANDSHAKING
+DEBUG: [HttpClient-2-SelectorManager] [2s 34ms] SelectorAttachment Registering jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent@61c74623 for 1 (false)
+
+Execution failed for task ':obscured.main()'.
+> Process 'command 'C:/Program Files/Eclipse Adoptium/jdk-17.0.5.8-hotspot/bin/java.exe'' finished with non-zero exit value 1
